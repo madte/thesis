@@ -44,6 +44,7 @@ public class CoapEndDevice extends CoapServer {
     public CoapEndDevice() {
 
         super();
+        this.add(new StringR("id", "dev1"));
         this.add(new Switch("led1", "OFF"));
         this.add(new Switch("led2", "OFF"));
         this.add(new StringR("string1", "empty"));
@@ -65,6 +66,7 @@ public class CoapEndDevice extends CoapServer {
 
         super();
 
+        this.add(new StringR("id", "secureDev1"));
         this.add(new Switch("led1", "OFF"));
         this.add(new Switch("led2", "OFF"));
         this.add(new StringR("string1", "empty"));
