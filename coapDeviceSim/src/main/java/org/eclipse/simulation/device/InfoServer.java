@@ -40,7 +40,7 @@ public class InfoServer extends CoapServer {
         deviceInfo.type = _type;
         String jsonDeviceInfo = gson.toJson(deviceInfo);
 
-        this.add(new StringR("info", jsonDeviceInfo));
+        this.add(new StringR("info", jsonDeviceInfo)); // TODO make extra resource that only supports GET
 
         // add endpoints on all IP addresses
         // this.addEndpoints();
