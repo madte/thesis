@@ -100,7 +100,7 @@ public class CoapEndDevice {
 
     public static void main(String[] args) {
 
-        AuthClient testor = new AuthClient("test");
+        // AuthClient testor = new AuthClient("test");
 
         @SuppressWarnings("unused")
         CoapEndDevice dtlsPskDev1 = new CoapEndDevice("127.0.0.1", "dtlsPskDev1", "generic",
@@ -110,8 +110,10 @@ public class CoapEndDevice {
         CoapEndDevice dev1 = new CoapEndDevice("127.0.0.2", "dev1", "generic");
 
         DtlsRawPublicKeyPair kp = new DtlsRawPublicKeyPair(generateEcdsaKeypair("secp256r1"));
+
         @SuppressWarnings("unused")
         CoapEndDevice dtlsRawPkDev1 = new CoapEndDevice("127.0.0.3", "dtlsRawPkDev1", "generic", kp);
+
     }
 
 }
