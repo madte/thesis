@@ -66,7 +66,7 @@ public class DeviceResource extends CoapResource {
 
         // make resource observable
         setObservable(true);
-        setObserveType(Type.CON); // configure the notification type to CONs
+        setObserveType(Type.NON); // configure the notification type to CONs
         getAttributes().setObservable(); // mark observable in the Link-Format
 
         // schedule a periodic update task, otherwise let events call changed()

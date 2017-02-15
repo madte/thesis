@@ -103,16 +103,16 @@ public class CoapEndDevice {
         // AuthClient testor = new AuthClient("test");
 
         @SuppressWarnings("unused")
-        CoapEndDevice dtlsPskDev1 = new CoapEndDevice("127.0.0.1", "dtlsPskDev1", "generic",
+        CoapEndDevice dtlsPskDev1 = new CoapEndDevice("[0:0:0:0:0:ffff:7f00:1]", "dtlsPskDev1", "generic",
                 new DtlsPskParams("Client_identity", "secretPSK"));
 
         @SuppressWarnings("unused")
-        CoapEndDevice dev1 = new CoapEndDevice("127.0.0.2", "dev1", "generic");
+        CoapEndDevice dev1 = new CoapEndDevice("[0:0:0:0:0:ffff:7f00:2]", "dev1", "generic");
 
         DtlsRawPublicKeyPair kp = new DtlsRawPublicKeyPair(generateEcdsaKeypair("secp256r1"));
 
         @SuppressWarnings("unused")
-        CoapEndDevice dtlsRawPkDev1 = new CoapEndDevice("127.0.0.3", "dtlsRawPkDev1", "generic", kp);
+        CoapEndDevice dtlsRawPkDev1 = new CoapEndDevice("[0:0:0:0:0:ffff:7f00:3]", "dtlsRawPkDev1", "generic", kp);
 
     }
 
