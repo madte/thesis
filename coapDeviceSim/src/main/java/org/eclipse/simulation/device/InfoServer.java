@@ -42,6 +42,8 @@ public class InfoServer extends CoapServer {
 
         this.add(new StringR("info", jsonDeviceInfo)); // TODO make extra resource that only supports GET
 
+        System.out.println("Info JSON: " + gson.toJson(deviceInfo));
+
         // add endpoints on all IP addresses
         // this.addEndpoints();
         this.addEndpoint(new CoapEndpoint(new InetSocketAddress(_ipAddr, COAP_INFO_PORT)));
